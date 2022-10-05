@@ -11,7 +11,8 @@ Dependencias:
         -npm i bootstrap@5.2.2
 
     Git Pages:
-        -npm gh-pages
+        -npm i gh-pages
+        -npm run build
 
 
 -----------
