@@ -10,6 +10,9 @@ Dependencias:
     CSS Frameworks:
         -npm i bootstrap@5.2.2
 
+    Git Pages:
+        -npm gh-pages
+
 
 -----------
 localStorage.setItem("task", JSON.stringify([{name:"joe"}])) --> convierto un arreglo en un string y lo guardo con "set item" en el local storage
