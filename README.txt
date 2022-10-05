@@ -1,4 +1,4 @@
-REACT_practice exercise
+Task List exercise
 https://www.youtube.com/watch?v=sjrK6RA65eQ&ab_channel=FaztCode
 
 Dependencias:
@@ -13,6 +13,7 @@ Dependencias:
     Git Pages:
         -npm i gh-pages
         -npm run build
+        -npm run deploy
 
 
 -----------

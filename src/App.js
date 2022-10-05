@@ -54,7 +54,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           {/* 5 3/3 primer prop funcion de ruta TaskCreator */}
-          <Route path="/" element={<TaskCreator primerProp={primerProp} />} />
+          <Route path="/TaskList" element={<TaskCreator primerProp={primerProp} />} />
         </Routes>
 
         {/* 10 -  exporto los tasks a ruta de tabla */}
@@ -67,11 +67,11 @@ export default function App() {
         />
         {showCompleted && (
           <TaskTable
-          tasks={tasks}
-          toggleTask={toggleTask}
-          showCompleted={showCompleted}
+            tasks={tasks}
+            toggleTask={toggleTask}
+            showCompleted={showCompleted}
           />
-          )}
+        )}
       </BrowserRouter>
     </div>
   );

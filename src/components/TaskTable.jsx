@@ -3,6 +3,7 @@ import { TaskRow } from "./TaskRow";
 // showcompleted es un prop que define true, si no lo pasan incialmente, lo define en false
 // al primer Tasktable no le paso showcompleted, por eso lo define false. Ahi hace el juego
 export const TaskTable = ({ tasks, toggleTask, showCompleted = false }) => {
+  
   /* 11 - mapeo las tareas */
   const mapeoTasks = (showCompleted) => {
     return (

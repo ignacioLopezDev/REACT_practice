@@ -2,6 +2,7 @@ import { useState } from "react";
 
 // 5 2/3 - traigo al primer prop desde la otra solapa
 export const TaskCreator = ({ primerProp }) => {
+
   // useState - Task
   // 1- Creo estado newTaskName, solo va a capturar la nueva tarea
   const [newTaskName, setNewTaskName] = useState();
@@ -26,13 +27,12 @@ export const TaskCreator = ({ primerProp }) => {
       <form onSubmit={handleSubmit} className="d-flex">
         <div className="col-9">
           <input
+            className="form-control-sm"
             type="text"
             placeholder="new task"
             value={newTaskName}
             // 3- en el formulario, cuando cambia, ejecuto handleChange
             onChange={handleChange}
-            // css
-            className="form-control-sm"
           />
         </div>
         <div className="col-3">
