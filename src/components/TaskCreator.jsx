@@ -1,15 +1,13 @@
 import { useState } from "react";
 
 // 5 2/3 - traigo al primer prop desde la otra solapa
-export const TaskCreator = ({primerProp}) => {
-
-
+export const TaskCreator = ({ primerProp }) => {
   // useState - Task
   // 1- Creo estado newTaskName, solo va a capturar la nueva tarea
   const [newTaskName, setNewTaskName] = useState();
 
   // handleChange
-  // 2- creo un handleChange y guardo el e.target.value en el setNewTaskName 
+  // 2- creo un handleChange y guardo el e.target.value en el setNewTaskName
   const handleChange = (e) => {
     setNewTaskName(e.target.value);
   };
@@ -22,18 +20,25 @@ export const TaskCreator = ({primerProp}) => {
     setNewTaskName("");
   };
 
-
   return (
     // 4 -cuando Submiteo ejecuto handleSubmit
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="new task"
-        value={newTaskName}
-        // 3- en el formulario, cuando cambia, ejecuto handleChange
-        onChange={handleChange}
-      />
-      <button>Save Task</button>
-    </form>
+    <div className="my-3 row ">
+      <form onSubmit={handleSubmit} className="d-flex">
+        <div className="col-9">
+          <input
+            type="text"
+            placeholder="new task"
+            value={newTaskName}
+            // 3- en el formulario, cuando cambia, ejecuto handleChange
+            onChange={handleChange}
+            // css
+            className="form-control-sm"
+          />
+        </div>
+        <div className="col-3">
+          <button className="btn btn-primary btn-sm">Save Task</button>
+        </div>
+      </form>
+    </div>
   );
 };
