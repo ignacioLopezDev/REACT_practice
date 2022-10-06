@@ -24,7 +24,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "TaskList",
+      "react-app",
       "react-app/jest"
     ]
   },
